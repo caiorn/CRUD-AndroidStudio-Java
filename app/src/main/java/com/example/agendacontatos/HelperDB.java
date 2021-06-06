@@ -33,7 +33,6 @@ public class HelperDB extends SQLiteOpenHelper {
         for (String table : tables) {
             db.execSQL(table);
         }
-        db.close();
     }
 
     //metodo executa se o banco ja existir e a versão mudar
